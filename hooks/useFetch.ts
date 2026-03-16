@@ -35,6 +35,7 @@ export const useFetch = () => {
       }
 
       const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+      console.log(basePath);
 
       const fetchPref = fetch(`${basePath}/json/pref_population.json`);
       const fetchChanges = fetch(`${basePath}/json/changes_population.json`);
